@@ -574,6 +574,10 @@ export interface ApiMenuItemMenuItem extends Struct.CollectionTypeSchema {
       'api::menu-item.menu-item'
     > &
       Schema.Attribute.Private;
+    menu_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::menu-category.menu-category'
+    >;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     preparationTimeMinutes: Schema.Attribute.Integer;
     price: Schema.Attribute.Decimal & Schema.Attribute.Required;

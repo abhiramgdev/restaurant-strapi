@@ -38,6 +38,11 @@
     },
     "preparationTimeMinutes": {
       "type": "integer"
+    },
+    "menu_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-category.menu-category"
     }
   }
 }
